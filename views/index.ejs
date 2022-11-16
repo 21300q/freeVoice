@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{
+                margin-block-end: 0px;
+                margin-block-start: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Mi aplicación de prueba.</p>
+        <% data.forEach(element => { %>
+            <p><b>● &nbsp; <%= element.product %>.</b> Cantidad: <%= element.quantity %>. Importe medio: <%= element.price%></p>
+        <% }) %>
+    </body>
+</html>
